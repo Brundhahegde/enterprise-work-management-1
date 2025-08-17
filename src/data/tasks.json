@@ -1,0 +1,6 @@
+[
+  { "id": 1, "title": "Design new homepage", "status": "To Do", "assignedTo": "alice@company.com" },
+  { "id": 2, "title": "Fix login bug", "status": "In Progress", "assignedTo": "alice@company.com" },
+  { "id": 3, "title": "Deploy updates", "status": "Completed", "assignedTo": "bob@company.com" },
+  { "id": 4, "title": "Test UI", "status": "To Do", "assignedTo": "charlie@company.com" }
+]
