@@ -6,7 +6,6 @@ const PROJECT_COLORS = ["#1976d2", "#2e7d32", "#ffd600"];
 const TASK_COLORS = ["#0288d1", "#c62828"];
 
 export default function ReportsDashboard({ projects = [], tasks = [] }) {
-  
   projects = projects.length ? projects : [
     { name: "Website", status: "In Progress" },
     { name: "App", status: "Completed" },
@@ -29,7 +28,6 @@ export default function ReportsDashboard({ projects = [], tasks = [] }) {
     { name: "Completed", value: tasks.filter((t) => t.status === "Completed").length },
   ];
 
-  
   const productivityData = [
     { day: "Mon", completed: 1 },
     { day: "Tue", completed: 2 },
@@ -39,7 +37,7 @@ export default function ReportsDashboard({ projects = [], tasks = [] }) {
   ];
 
   return (
-    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
+    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 4, justifyContent: "center" }}>
       <Paper sx={{ p: 3, flex: 1, minWidth: 340 }}>
         <Typography variant="h6" gutterBottom>Project Status</Typography>
         <ResponsiveContainer width="100%" height={220}>
